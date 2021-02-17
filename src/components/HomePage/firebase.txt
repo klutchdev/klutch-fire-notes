@@ -1,0 +1,23 @@
+import { firestore } from "../../firebase";
+import { useCollectionData } from "react-firebase-hooks/firestore";
+import { timestamp } from "../../firebase/firestore";
+
+const itemRef = firestore.collection("items");
+  const query = itemRef.orderBy("createdAt");
+  const [items] = useCollectionData(query, { idField: "id" });
+
+
+const addItem = async (e) => {
+    e.preventDefault();
+    await itemRef
+      .add({
+        createdAt: timestamp,
+        content: content,
+        priority: isPriority,
+        createdBy: user.displayName,
+        owner: user.uid,
+      })
+      .then(() => setContent(""))
+      .then(() => closeModal())
+      .catch((error) => alert(error));
+  };
