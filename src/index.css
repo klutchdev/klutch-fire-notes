@@ -1,10 +1,6 @@
 @import-normalize;
 /* @import 'https://klutch-css.netlify.app/style.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Montserrat:wght@300;400;500&display=swap');
-/* 
-font-family: 'Baloo 2';
-font-family: 'Montserrat'; 
-*/
 
 :root {
   --black: #030303;
@@ -37,16 +33,9 @@ font-family: 'Montserrat';
 
   --text-dark: var(--dark);
   --text-light: var(--firebase-grey);
-
-<<<<<<< HEAD
   --primary: var(--firebase-amber);
   --primary-hover: var(--firebase-amber-hover);
   --accent: var(--firebase-orange);
-=======
-  --primary: var(--supabase-green);
-  --primary-hover: var(--supabase-green-hover);
-  --accent: var(--supabase-green-hover);
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
 
   --input-bg: var(--firebase-grey);
   --save-button: var(--primary);
@@ -98,13 +87,6 @@ body {
     color: var(--dark-accent);
   }
 
-<<<<<<< HEAD
-
-@keyframes welcomeText {
-  0% {
-    color: var(--dark-accent);
-  }
-
   25% {
     color: var(--firebase-amber);
   }
@@ -119,22 +101,13 @@ body {
 
   100% {
     color: var(--firebase-coral);
-=======
-  25% {
-    color: var(--supabase-green);
-  }
-
-  50% {
-    color: var(--supabase-green-hover);
-  }
-
+    
   75% {
     color: var(--firebase-grey);
   }
 
   100% {
     color: var(--dark-accent);
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
   }
 }
 
@@ -314,8 +287,6 @@ body {
   display: flex;
   align-items: center;
   /* justify-content: flex-start; */
-
-<<<<<<< HEAD
 }
 
 .header h2 {
@@ -328,20 +299,6 @@ body {
   color: var(--primary);
 }
 
-=======
-}
-
-.header h2 {
-  margin: auto auto auto 0;
-  text-align: left;
-  letter-spacing: -1px;
-  font-size: 2.75rem;
-  font-weight: 400;
-  font-family: var(--font-primary);
-  color: var(--primary);
-}
-
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
 .footer button {
   height: var(--button-height);
   margin: 1rem 0;
@@ -433,21 +390,6 @@ form {
   transition: var(--all-400-ease);
 }
 
-.signout-button {
-  background-color: var(--supabase-red);
-  opacity: 0.95;
-  color: var(--black);
-  border-radius: var(--radius);
-  outline: none;
-  border: none;
-  transition: var(--all-400-ease);
-}
-
-.signout-button:hover {
-  background-color: var(--supabase-red-hover);
-  transition: var(--all-400-ease);
-}
-
 .new-item-button {
   height: 3rem;
   width: 4rem;
@@ -532,7 +474,6 @@ input[type=checkbox]:checked {
   border: var(--checkbox-checked-border);
   transition: var(--all-400-ease);
 }
-<<<<<<< HEAD
 
 input[type=checkbox]:checkfocused {
   outline: none !important;
@@ -543,18 +484,6 @@ a {
   color: currentColor;
 }
 
-=======
-
-input[type=checkbox]:checkfocused {
-  outline: none !important;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
 ::-webkit-scrollbar {
   background-color: transparent;
   height: 5px;
@@ -567,11 +496,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-<<<<<<< HEAD
   background-color: var(--firebase-blue);
-=======
-  background-color: var(--supabase-green);
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
   width: 3px;
   border-radius: 15px;
 }
@@ -579,11 +504,7 @@ a {
 ::-webkit-scrollbar-corner {
   border-radius: 15px;
   width: 3px;
-<<<<<<< HEAD
   background-color: var(--firebase-amber);
-=======
-  background-color: var(--supabase-green-hover);
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
 }
 
 @media screen and (min-width: 320px) {
@@ -651,34 +572,12 @@ a {
 @media screen and (min-width: 1024px) {
   :root {
     font-size: 95%;
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
-  }
-}
-
-<<<<<<< HEAD
-@media screen and (min-width: 1024px) {
-  :root {
-    font-size: 95%;
-=======
-  .modal {
-    width: 50vw;
-    height: 50vh;
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
-  }
-
-<<<<<<< HEAD
   .modal {
     width: 50vw;
     height: 50vh;
   }
 }
 
-@media screen and (min-width: 1080px) {}
-
-=======
-@media screen and (min-width: 1080px) {}
-
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
 @media screen and (min-width: 1080px) {
   :root {
     font-size: 100%;
