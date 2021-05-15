@@ -101,6 +101,7 @@ body {
 
   100% {
     color: var(--firebase-coral);
+  }
     
   75% {
     color: var(--firebase-grey);
