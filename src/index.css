@@ -558,6 +558,7 @@ a {
 @media screen and (min-width: 1024px) {
   :root {
     font-size: 95%;
+  }
   .modal {
     width: 50vw;
     height: 50vh;
