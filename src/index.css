@@ -1,6 +1,6 @@
 @import-normalize;
 /* @import 'https://klutch-css.netlify.app/style.css'; */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 :root {
   --black: #030303;
@@ -541,28 +541,14 @@ a {
 @media screen and (min-width: 768px) {
   :root {
     font-size: 85%;
-<<<<<<< HEAD
-=======
   }
 
-  .modal {
-    width: 75vw;
-    height: 50vh;
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
-  }
-}
-
-<<<<<<< HEAD
   .modal {
     width: 75vw;
     height: 50vh;
   }
 }
 
-@media screen and (min-width: 960px) {
-  :root {
-    font-size: 90%;
-=======
 @media screen and (min-width: 960px) {
   :root {
     font-size: 90%;
