@@ -19,12 +19,12 @@ const HomePage = ({ user }) => {
   } = useContext(ModalContext);
   const [content, setContent] = useState("");
   const [isPriority, setIsPriority] = useState(false);
-<<<<<<< HEAD
+  
+  const handleContent = (e) => setContent(e.target.value);
+  
   const itemRef = firestore.collection("items");
   const query = itemRef.orderBy("createdAt");
   const [items] = useCollectionData(query, { idField: "id" });
-
-  const handleContent = (e) => setContent(e.target.value);
 
   const addItem = async (e) => {
     e.preventDefault();
@@ -37,64 +37,16 @@ const HomePage = ({ user }) => {
         owner: user.uid,
       })
       .then(() => setContent(""))
-      .then(() => closeModal())
-      .catch((error) => alert(error));
-=======
-  const [itemsList, setItemList] = useState([]);
-
-  const handleContent = (e) => setContent(e.target.value);
-
-  const fetchItems = async () => {
-    const { data: items, error } = await supabase.from("items").select("*");
-    if (error) console.log(error);
-    else setItemList(items);
-  };
-
-  useEffect(() => {
-    fetchItems().catch(console.log);
-
-    return () => fetchItems();
-  }, [itemsList]);
-
-  const addItem = async (e) => {
-    e.preventDefault();
-    const { data: item, error } = await supabase
-      .from("items")
-      .insert({
-        content: content,
-        is_priority: isPriority,
-        created_by: user.displayName,
-        owner: user.email,
-      })
-      .single();
-    if (error) console.log(error);
-    else {
-      setItemList([item, ...itemsList]);
-      setContent("");
-      closeModal();
-    }
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
-  };
+      .catch((error) => alert(error))
+      .finally(() => closeModal());
+  }
 
   return (
     <>
       <div className="item-container">
-<<<<<<< HEAD
         {items &&
           items.map((item) => {
             return <ItemTile item={item} key={item.id} />;
-=======
-        {itemsList &&
-          itemsList.map((item) => {
-            return (
-              <ItemTile
-                item={item}
-                itemsList={itemsList}
-                setItemsList={setItemList}
-                key={item.id}
-              />
-            );
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
           })}
       </div>
       <button onClick={openOptionsModal} className="sign-out-button">
@@ -110,11 +62,7 @@ const HomePage = ({ user }) => {
 
       {isModalOpen && (
         <Modal
-<<<<<<< HEAD
           header="🔥 New item"
-=======
-          header="⚡️ New item"
->>>>>>> 7c60ee9b551c2d7270a0d295be23214c718eea7f
           onSubmit={addItem}
           isForm="true"
           onClose={closeModal}
