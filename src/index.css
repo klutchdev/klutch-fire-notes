@@ -105,8 +105,8 @@ body {
   75% {
     color: var(--firebase-grey);
   }
-
-  100% {
+    
+  50% {
     color: var(--dark-accent);
   }
 }
