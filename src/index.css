@@ -420,7 +420,7 @@ form {
   transition: var(--all-400-ease);
 }
 
-.sign-out-button {
+.signout-button {
   height: 3rem;
   width: 4rem;
   display: flex;
@@ -441,12 +441,12 @@ form {
   transition: var(--all-400-ease);
 }
 
-.sign-out-button svg {
+.signout-button svg {
   color: var(--dark);
   transition: var(--all-400-ease);
 }
 
-.sign-out-button:hover {
+.signout-button:hover {
   background-color: var(--primary-hover);
   transition: var(--all-400-ease);
 }
